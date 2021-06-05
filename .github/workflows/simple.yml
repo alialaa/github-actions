@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-windows-commands:
     runs-on: windows-latest
+    needs: [run-shell-command] # add this when you want to run this job after completion of other job. We want to this job in parallel of other job then remove this key.
     steps:
       - name: Directory Powershell
         run: Get-Location
