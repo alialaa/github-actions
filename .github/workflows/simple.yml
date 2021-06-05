@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python Commands
+        run: |
+          import platform
+          print(plaform.processors())
+        shell: python
