@@ -1,4 +1,4 @@
-name: Container
+name: Multi-Container
 
 on: push
 
